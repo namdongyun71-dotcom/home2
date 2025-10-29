@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>금·은 시세 정보 | 안심금속</title>
+  <style>
+    body {
+      font-family: "Noto Sans KR", Arial, sans-serif;
+      background-color: #faf7f0;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #c7a654;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #f0e6d2;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      font-size: 1.2em;
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #3d331e;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      font-size: 1.6em;
+      color: #3d331e;
+      border-left: 6px solid #c7a654;
+      padding-left: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f7f1e3;
+      color: #333;
+    }
+
+    .highlight {
+      color: #c7a654;
+      font-weight: bold;
+      font-size: 1.4em;
+    }
+
+    .update-time {
+      text-align: right;
+      font-size: 1em;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #f0e6d2;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      font-size: 1.1em;
+      color: #444;
+    }
+
+    button {
+      background-color: #c7a654;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #b2903f;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    💰 안심금속 시세 정보
+  </header>
+
+  <nav>
+    <a href="#">홈</a>
+    <a href="#">금 시세</a>
+    <a href="#">은 시세</a>
+    <a href="#">문의하기</a>
+  </nav>
+
+  <main>
+    <h2>오늘의 금·은 시세</h2>
+    <div class="update-time">업데이트 시간: 2025-10-29 10:00 기준</div>
+
+    <table>
+      <tr>
+        <th>구분</th>
+        <th>1g 기준가</th>
+        <th>전일 대비</th>
+      </tr>
+      <tr>
+        <td>금 (Gold)</td>
+        <td class="highlight">₩82,500</td>
+        <td style="color:green;">▲ +500</td>
+      </tr>
+      <tr>
+        <td>은 (Silver)</td>
+        <td class="highlight">₩1,050</td>
+        <td style="color:red;">▼ -20</td>
+      </tr>
+    </table>
+
+    <div style="text-align:center; margin-top:30px;">
+      <button onclick="alert('최신 시세로 갱신됩니다.')">🔄 시세 새로고침</button>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 안심금속 | 고객센터: 02-123-4567 | 평일 09:00~18:00
+  </footer>
+
+</body>
+</html>
